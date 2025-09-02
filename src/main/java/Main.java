@@ -14,7 +14,7 @@ public class Main {
             CustomerType.PREMIUM, new PremiumPolicy(),
             CustomerType.PARTNER, new PartnerPolicy()
         );
-        DiscountCalculator calculator = new DiscountCalculator(policies);
+        DiscountCalculator calculator = new DiscountCalculator();
         double amount = 100;
         System.out.println(calculator.apply(amount, CustomerType.PARTNER)); // Deve imprimir 88.0
     }
